@@ -1,0 +1,20 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	border: none;
+}
+.container {
+	max-width: 1520px;
+	width: 100%;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+}
+ol,
+ul {
+	list-style: none;
+}
