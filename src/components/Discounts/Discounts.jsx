@@ -1,10 +1,10 @@
 import './Discounts.css';
 
 const discountItems = [
-  { id: 1, image: './images/FoodPhoto1.png', name: 'Greys Vage', days: 6, discount: '-30%' },
-  { id: 2, image: './images/FoodPhoto2.png', name: 'Burger King', days: 6, discount: '-25%' },
-  { id: 3, image: './images/FoodPhoto3.png', name: 'Pizza Hub', days: 7, discount: '-40%' },
-  { id: 4, image: './images/FoodPhoto4.png', name: 'Taco Bell', days: 8, discount: '-20%' },
+  { id: 1, image: 'images/FoodPhoto1.png', name: 'Greys Vage', days: 6, discount: '-30%' },
+  { id: 2, image: 'images/FoodPhoto2.png', name: 'Burger King', days: 6, discount: '-25%' },
+  { id: 3, image: 'images/FoodPhoto3.png', name: 'Pizza Hub', days: 7, discount: '-40%' },
+  { id: 4, image: 'images/FoodPhoto4.png', name: 'Taco Bell', days: 8, discount: '-20%' },
 ];
 
 export default function Discounts() {

@@ -19,7 +19,7 @@ export default function FoodCard({ image, name, restaurant, price }) {
       <div className="food-card__body">
         <h3 className="food-card__name">{name}</h3>
         <div className="food-card__restaurant">
-          <img src="/images/icongps.svg" alt="Location" />
+          <img src="images/icongps.svg" alt="Location" />
           <span>{restaurant}</span>
         </div>
         <div className="food-card__footer">

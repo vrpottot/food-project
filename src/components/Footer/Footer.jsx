@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="footer__brand">
             <div className="footer__brand-logo">
-              <img src="/images/burger.png" alt="FoodWagon" />
+              <img src="images/burger.png" alt="FoodWagon" />
               <div>
                 <span className="footer__brand-logo-food">food</span>
                 <span className="footer__brand-logo-wagon">wagon</span>
