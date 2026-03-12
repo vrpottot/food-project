@@ -10,7 +10,7 @@ export default function Header() {
         <div className="header__inner">
           {/* Logo */}
           <div className="header__logo">
-            <img src="images/burger.png" alt="FoodWagon" />
+            <img src={`${import.meta.env.BASE_URL}images/burger.png`} alt="FoodWagon" />
             <div className="header__logo-text">
               <span className="header__logo-food">food</span>
               <span className="header__logo-wagon">wagon</span>

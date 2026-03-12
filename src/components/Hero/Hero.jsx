@@ -27,14 +27,14 @@ export default function Hero() {
                   className={`hero__tab ${activeTab === 'delivery' ? 'active' : ''}`}
                   onClick={() => setActiveTab('delivery')}
                 >
-                  <img src="images/motorcycleicon.png" alt="Delivery" />
+                  <img src={`${import.meta.env.BASE_URL}images/motorcycleicon.png`} alt="Delivery" />
                   Delivery
                 </button>
                 <button
                   className={`hero__tab ${activeTab === 'pickup' ? 'active' : ''}`}
                   onClick={() => setActiveTab('pickup')}
                 >
-                  <img src="images/magazineicon.png" alt="Pickup" />
+                  <img src={`${import.meta.env.BASE_URL}images/magazineicon.png`} alt="Pickup" />
                   Pickup
                 </button>
               </div>
@@ -43,7 +43,7 @@ export default function Hero() {
 
               <div className="hero__search-row">
                 <div className="hero__input-wrapper">
-                  <img src="images/locationicon.png" alt="Location" />
+                  <img src={`${import.meta.env.BASE_URL}images/locationicon.png`} alt="Location" />
                   <input
                     className="hero__input"
                     type="text"
@@ -51,7 +51,7 @@ export default function Hero() {
                   />
                 </div>
                 <button className="hero__search-btn">
-                  <img src="images/findicon.png" alt="Search" />
+                  <img src={`${import.meta.env.BASE_URL}images/findicon.png`} alt="Search" />
                   Find Food
                 </button>
               </div>
@@ -60,7 +60,7 @@ export default function Hero() {
 
           {/* Right Image */}
           <div className="hero__image">
-            <img src="images/imagefood.png" alt="Delicious food" />
+            <img src={`${import.meta.env.BASE_URL}images/imagefood.png`} alt="Delicious food" />
           </div>
         </div>
       </div>
