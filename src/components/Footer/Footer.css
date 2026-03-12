@@ -1,0 +1,215 @@
+.footer {
+    background: var(--surface-dark);
+    padding: var(--space-4xl) 0 var(--space-xl);
+    color: var(--text-white);
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    gap: 48px;
+    padding-bottom: var(--space-2xl);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Brand Column */
+.footer__brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.footer__brand-logo img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer__brand-logo-food {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--primary-orange);
+}
+
+.footer__brand-logo-wagon {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--primary-yellow);
+}
+
+.footer__brand-description {
+    font-size: 14px;
+    color: var(--gray-400);
+    line-height: 1.7;
+    margin-bottom: 24px;
+    max-width: 300px;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 12px;
+}
+
+.footer__social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    font-size: 16px;
+    transition: var(--transition-normal);
+    cursor: pointer;
+}
+
+.footer__social-link:hover {
+    background: var(--primary-orange);
+    border-color: var(--primary-orange);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-orange);
+}
+
+/* Columns */
+.footer__column-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-white);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer__column-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: var(--cta-gradient);
+    border-radius: 2px;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer__link {
+    font-size: 14px;
+    color: var(--gray-400);
+    transition: var(--transition-fast);
+    cursor: pointer;
+}
+
+.footer__link:hover {
+    color: var(--primary-yellow);
+    padding-left: 6px;
+}
+
+/* Newsletter */
+.footer__newsletter-text {
+    font-size: 14px;
+    color: var(--gray-400);
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.footer__newsletter-form {
+    display: flex;
+    gap: 8px;
+}
+
+.footer__newsletter-input {
+    flex: 1;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-sm);
+    color: var(--text-white);
+    font-size: 14px;
+    transition: var(--transition-fast);
+}
+
+.footer__newsletter-input::placeholder {
+    color: var(--gray-500);
+}
+
+.footer__newsletter-input:focus {
+    border-color: var(--primary-orange);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.footer__newsletter-btn {
+    padding: 12px 24px;
+    background: var(--cta-gradient);
+    border-radius: var(--radius-sm);
+    color: var(--text-white);
+    font-size: 14px;
+    font-weight: 700;
+    transition: var(--transition-normal);
+    white-space: nowrap;
+    cursor: pointer;
+    box-shadow: var(--shadow-orange);
+}
+
+.footer__newsletter-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-orange-lg);
+}
+
+/* Bottom */
+.footer__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--space-lg);
+}
+
+.footer__copyright {
+    font-size: 13px;
+    color: var(--gray-500);
+}
+
+.footer__bottom-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer__bottom-link {
+    font-size: 13px;
+    color: var(--gray-500);
+    transition: var(--transition-fast);
+    cursor: pointer;
+}
+
+.footer__bottom-link:hover {
+    color: var(--primary-yellow);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .footer__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 36px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer__grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .footer__newsletter-form {
+        flex-direction: column;
+    }
+}
